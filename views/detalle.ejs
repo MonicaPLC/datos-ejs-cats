@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/gatos.css">
+  <title>Características de los felinos</title>
+</head>
+
+<body>
+
+
+
+  <h3 id="detalles">
+    <%=gato.nombre%>
+  </h3>
+
+  <div>
+    <img src="img/<%=gato.imagen%>" alt="img/<%=gato.nombre%>">
+  </div>
+
+  <h3 id="nombre">Nombre:<%=gato.nombre%>
+  </h3>
+  <h3 id="comida">Comida Favorita : <%=gato.comida_favorita%>
+  </h3>
+  <h3 id="edad">Edad : <%=gato.edad%>
+  </h3>
+
+  <div id="tipos">
+    <h3 id="dormir"> Le gusta dormir en:
+
+
+    </h3>
+    <ul>
+      <% for( lugar of gato.duerme_en){%>
+        <li>
+          <%= lugar%>
+        </li>
+        <%}%>
+    </ul>
+  </div>
+
+
+</body>
+
+</html>
